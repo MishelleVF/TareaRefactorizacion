@@ -6,7 +6,7 @@
 
 # Técnicas de Refactorización aplicadas en el código
 
-### Extracción de métodos
+### 1. Extracción de métodos
 Se creó una función específica para cada tipo de evento (`leerdatos`, `dni_valido`, `contar_votos`, `obtener_ganador`, `calcular_ganador`). Esto mejora la legibilidad y facilita la reutilización del código.
 
 ```python
@@ -85,7 +85,7 @@ def leerdatos(self, filename):
             return [ordenado[0][0]]
 ```
 
-### Renombrar variables o métodos
+### 2. Renombrar variables o métodos
 Las variables fueron renombradas para que sus nombres sean más descriptivos (`eventos` a `lista_eventos`). Esto hace que el código sea más comprensible.
 
 ```python
@@ -96,7 +96,7 @@ eventos = ...
 lista_eventos = ...
 ```
 
-### Eliminar código duplicado
+### 3. Eliminar código duplicado
 Se eliminó la lógica duplicada de procesamiento de eventos utilizando un diccionario (`votos_validos`) para mapear candidatos a sus votos válidos.
 
 ```python
@@ -113,7 +113,7 @@ for fila in data:
         total_votos_validos += 1
 ```
 
-### Simplificación de condicionales
+### 4. Simplificación de condicionales
 Se utilizó un diccionario para mapear los tipos de eventos a sus funciones de procesamiento, simplificando la estructura condicional en el método `calcular_ganador`.
 
 ```python
@@ -130,7 +130,7 @@ else:
         return [ordenado[0][0]]
 ```
 
-### División de métodos o archivos grandes 
+### 5. División de métodos o archivos grandes 
 En el método `calcular_ganador`, se han extraído las siguientes funciones auxiliares:
 
 - contar_votos: para contar los votos válidos por candidato.
@@ -246,3 +246,4 @@ if __name__ == '__main__':
 2. Se simplificaron las estructuras condicionales.
 3. Se renombraron variables para mayor claridad.
 4. Se eliminó código duplicado mediante el uso de un diccionario de funciones.
+5. Se realizaron 6 pruebas unitarias en total
