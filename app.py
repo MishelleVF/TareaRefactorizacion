@@ -1,10 +1,19 @@
 import csv
-# el programa deberá calcular el ganador de votos validos considerando que los siguientes datos son proporcionados:
+# el programa deberá calcular el ganador de votos validos considerando que 
+# los siguientes datos son proporcionados:
 # region,provincia,distrito,dni,candidato,esvalido
-# Si hay un candidato con >50% de votos válidos retornar un array con un string con el nombre del ganador
-# Si no hay un candidato que cumpla la condicion anterior, retornar un array con los dos candidatos que pasan a segunda vuelta
-# Si ambos empatan con 50% de los votos se retorna el que apareció primero en el archivo
+
+# Si hay un candidato con >50% de votos válidos
+# retornar un array con un string con el nombre del ganador
+
+# Si no hay un candidato que cumpla la condicion anterior,
+# retornar un array con los dos candidatos que pasan a segunda vuelta
+
+# Si ambos empatan con 50% de los votos se retorna el que apareció primero
+# en el archivo
+
 # el DNI debe ser valido (8 digitos)
+
 class CalculaGanador:
 
     def leerdatos(self):
