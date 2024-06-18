@@ -7,7 +7,7 @@
 # Técnicas de Refactorización aplicadas en el código
 
 ### Extracción de métodos
-Se creó una función específica para cada tipo de evento (`leerdatos`, `dni_valido`, `calcular_ganador`). Esto mejora la legibilidad y facilita la reutilización del código.
+Se creó una función específica para cada tipo de evento (`leerdatos`, `dni_valido`, `contar_votos`, `obtener_ganador`, `calcular_ganador`). Esto mejora la legibilidad y facilita la reutilización del código.
 
 ```python
 def leerdatos(self, filename):
