@@ -236,11 +236,6 @@ if __name__ == '__main__':
 6. **test_leerdatos_archivo_no_existente():**
    - Verifica que el método `leerdatos` maneje correctamente el caso de archivos inexistentes, retornando una lista vacía.
 
-
-# Evaluación del código resultante
-- El código refactorizado es más modular, fácil de mantener y de entender.
-- Las funciones específicas permiten una mejor separación de responsabilidades y facilitan futuras expansiones o modificaciones del código.
-
 # Cambios Realizados
 1. Se extrajeron funciones específicas para cada tipo de evento.
 2. Se simplificaron las estructuras condicionales.
